@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gender-container {
+            display: flex;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <div class="container">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <ul>
+                    <li>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="user_name">
+                    
+                        <label for="lastname">Apellido</label>
+                        <input type="text" id="lastname" name="user_lastname">
+                    </li>
+                    <li>
+                        <label for="birth-date">Fecha de Nacimiento</label><br>
+                        <input type="date" id="birth-date" name="user_birth-date">
+                    </li>
+                    <li>
+                        <label>Género</label><br>
+                        <div class="gender-container">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Masculino</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Femenino</label>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Información de Acceso</legend>
+                <ul>
+                    <li>
+                        <label for="user_email">Correo Electrónico</label>
+                        <input type="email" name="email" id="user_email">
+                    </li>
+                    <li>
+                        <label for="user_password">Contraseña</label>
+                        <input type="password" name="password" id="user_password">
+                    </li>
+                    <li>
+                        <label for="user_password2">Confirmar Contraseña</label>
+                        <input type="password" name="password2" id="user_password2">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
