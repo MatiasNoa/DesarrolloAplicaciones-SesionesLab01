@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Bebidas</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Tienda de Bebidas</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenido a nuestra Tienda de Bebidas</h2>
+            <p>Encuentra las mejores bebidas al mejor precio. Explora nuestra selección a continuación.</p>
+        </section>
+        <section id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <img src="image/bebida-limonada-fresa.jpg" alt="Bebida 1" width="400">
+                <h3>Limonada de fresa</h3>
+                <p>Disfruta de la frescura de nuestra limonada de fresa, una combinación perfecta de limones jugosos y 
+                    fresas maduras, realzada con un toque de menta. Ideal para refrescarte en cualquier momento del día.</p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Especificación</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Volume</td>
+                        <td>500ml</td>
+                    </tr>
+                    <tr>
+                        <td>Calorías</td>
+                        <td>150 kcal</td>
+                    </tr>
+                </table>
+                <p class="price">$10.00</p>
+                <button onclick="window.location.href='https://www.google.com';">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="image/jugo-sandia-menta-vidrio-aislado-sobre-fondo-blanco_978921-4091.avif" alt="Bebida 2" height="400">
+                <h3>Agua de sandia con menta</h3>
+                <p>Deléitate con nuestra agua de sandía, una bebida refrescante que combina la dulzura natural de la sandía 
+                    con un toque de menta, creando una experiencia revitalizante y ligera.</p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Especificación</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Volume</td>
+                        <td>540ml</td>
+                    </tr>
+                    <tr>
+                        <td>Calorías</td>
+                        <td>130 kcal</td>
+                    </tr>
+                </table>
+                <p class="price">$12.00</p>
+                <button onclick="window.location.href='https://www.google.com';">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="image/swzjjrcehfuoah8kn4hz_800x.webp" alt="Bebida 3" width="400">
+                <h3>Piña colada</h3>
+                <p>Sumérgete en el paraíso con nuestra piña colada, una mezcla cremosa de piña tropical y coco, 
+                    que transporta tu paladar a una isla exótica con cada sorbo.</p>
+                <br>
+                <table>
+                    <!-- falta el thead, tbody y el tfoot-->
+                    <tr>
+                        <th>Especificación</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Volume</td>
+                        <td>600ml</td>
+                    </tr>
+                    <tr>
+                        <td>Calorías</td>
+                        <td>140 kcal</td>
+                    </tr>
+                </table>
+                <p class="price">$15.00</p>
+                <button onclick="window.location.href='https://www.google.com';">Comprar</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+            <form action="https://www.google.com" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <section>
+        <footer>
+            <footer><p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+                <p><a ref="/contacto">Contáctanos</a></p>
+        </footer>
+    </section>
+</body> 
+</html>
