@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Contenido principal */
+        main {
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        section h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy ...... . Soy Ingeniero de Sistemas egresado de "La Universidad Catolida de Santa Maria"  y me apasiona la programacion . Aquí puedes ver algunos de mis trabajos y proyectos.</p>
+    </section>
+    <img src="img/images.jfif"/>
+  <!-- debemos inventar un nombre  -->
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1: Plataforma de Gestión de Proyectos Basada en la Nube</h3>
+            <p>
+                Descripción: <br>
+                Desarrolla una aplicación web que permita a equipos gestionar proyectos, tareas y colaboración en tiempo real. Esta plataforma debería facilitar la planificación, seguimiento del progreso y comunicación entre los miembros del equipo. <br> Características Clave:
+                
+                <br>Gestión de Proyectos: Crear, editar y eliminar proyectos. Cada proyecto puede tener múltiples tareas asociadas.
+                <br>Tareas y Subtareas: Asignar tareas a miembros del equipo, definir fechas límite, y agregar subtareas.
+                <br>Colaboración en Tiempo Real: Integrar chat en vivo o comentarios en tareas para permitir una comunicación fluida.
+                <br>Panel de Control: Un dashboard para visualizar el progreso de los proyectos y tareas, gráficos de desempeño y estadísticas.
+                <br>Notificaciones: Alertas para fechas límite, actualizaciones de tareas y mensajes.
+                <br>Autenticación de Usuarios: Sistema de login y registro seguro para gestionar usuarios y permisos.</p>
+            <a target="_blank"  href="https://github.com/">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2: Sistema de Recomendación de Productos Basado en Machine Learning</h3>
+            <p>
+                Descripción:
+                Construye un sistema de recomendación para productos en una tienda en línea utilizando técnicas de machine learning. Este sistema sugerirá productos a los usuarios basado en su historial de navegación y compras anteriores.
+                
+                <br>Características Clave:
+                
+                <br>Recopilación de Datos: Implementar un mecanismo para recolectar datos de navegación y compras de los usuarios.
+                <br>Algoritmo de Recomendación: Utilizar técnicas como filtrado colaborativo, sistemas basados en contenido o modelos híbridos para generar recomendaciones.
+                <br>Interfaz de Usuario: Desarrollar una interfaz en la que los usuarios puedan ver recomendaciones personalizadas y ajustar sus preferencias.
+                <br>Análisis de Datos: Incluir visualizaciones y métricas para analizar la efectividad del sistema de recomendaciones.
+                <br>Integración con el Backend: Conectar el sistema de recomendaciones con una base de datos de productos y usuarios.</p>
+            <a target="_blank" href="https://www.minecraft.net/es-es">Ver Proyecto</a>
+        </div>
+        <!-- Inventar Proyecto  -->
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="" method="post">
+            
+            <label for="nombre">Nombre:</label>
+            <input placeholder="Nombre y Apellidos"
+             type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input placeholder="Example@email.com" type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea placeholder="Mensaje" id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
