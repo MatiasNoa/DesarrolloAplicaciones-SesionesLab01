@@ -1,0 +1,54 @@
+/* Main Content */
+main {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section img {
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #8b4513;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 10px;
+}
+
+.content-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dish-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dish-list li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.dish-list li strong {
+    color: #8b4513;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Online</title>
+    <link rel="stylesheet" href="./css/estaticos.css">
+    <link rel="stylesheet" href="./css/reservas.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="main-header">
+        <img src="./img/rocotorelleno.jpg" alt="Logo de Página" class="logo">
+        <h1 class="site-title">Sabor Arequipeño</h1>
+    </header>
+    <nav class="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="nav-button" aria-label="Ir a la página de inicio">Página de Inicio</a>
+        <a href="menu.html" class="nav-button" aria-label="Ir al menú">Ver Menú</a>
+        <a href="reservas.html" class="nav-button" aria-current="page" aria-label="Ir a la página de reservas">Reservas Online</a>
+    </nav>
+    
+    
+    <!-- MAIN -->
+    <main id="reservation-main" class="content-section">
+        <form action="" method="post" id="reservation-form" class="reservation-form">
+            <fieldset id="client-data">
+                <legend>Datos de cliente</legend>
+                <ul class="form-list">
+                    <li class="form-item">
+                        <label for="client-name">Nombre del cliente</label>
+                        <input type="text" id="client-name" name="client-name" required placeholder="Ingrese su nombre">
+                    </li>
+                    <li class="form-item">
+                        <label for="guest-count">Cantidad de comensales</label>
+                        <input type="number" id="guest-count" name="guest-count" max="8" min="1" required placeholder="Número de comensales">
+                    </li>
+                    <li class="form-item">
+                        <label for="phone-number">Número telefónico</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="9+[0-9]{8}" required placeholder="Ingrese su número telefónico">
+                    </li>
+                    <li class="form-item">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Ingrese su correo electrónico">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset id="reservation-data">
+                <legend>Datos de la reserva</legend>
+                <li class="form-item">
+                    <label for="reservation-date-time">Fecha y hora</label>
+                    <input type="datetime-local" id="reservation-date-time" name="reservation-date-time" required>
+                </li>
+            </fieldset>
+            <button type="reset" id="reset-button" class="form-button">Limpiar</button>
+            <button type="submit" id="submit-button" class="form-button">Reservar Cita</button>
+        </form>
+    </main>
+</body>
+</html>
