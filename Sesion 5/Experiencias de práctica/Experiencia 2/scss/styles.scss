@@ -1,0 +1,118 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-color: #333;
+$header-bg-color: #ecf0f1;
+$footer-bg-color: #95a5a6;
+$font-size-base: 16px;
+$image-width: 300px;
+$image-height: 200px;
+$spacing: 20px;
+
+// Funciones
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-style($bg-color, $border-color) {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  padding: $spacing;
+  text-align: center;
+}
+
+@mixin button-style {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    background-color: darken-color($primary-color, 10%);
+  }
+}
+
+// Estilos globales
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: Arial, sans-serif;
+  color: $font-color;
+}
+
+header {
+  background-color: $header-bg-color;
+  padding: $spacing;
+  @include flex-center;
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: $spacing;
+  }
+}
+
+nav {
+  background-color: darken-color($header-bg-color, 10%);
+  padding: $spacing;
+  text-align: center;
+  a {
+    margin: 0 $spacing;
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+      color: darken-color($primary-color, 10%);
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  section {
+    width: calc(50% - 2*$spacing);
+    margin: $spacing;
+    @include section-style($secondary-color, darken-color($secondary-color, 20%));
+    img {
+      width: $image-width;
+      height: $image-height;
+    }
+    h3 {
+      color: darken-color($secondary-color, 30%);
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  background-color: $footer-bg-color;
+  padding: $spacing;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  div {
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Sombra
+@mixin box-shadow($color, $x: 0, $y: 2px, $blur: 4px) {
+    box-shadow: $x $y $blur $color;
+  }
+  
+  // Bordes redondeados
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  // Transiciones
+  @mixin transition($property, $duration: 0.3s, $ease: ease) {
+    transition: $property $duration $ease;
+  }
